@@ -546,6 +546,12 @@ class TemplateExporter(Exporter):
             base_dir = os.path.join(root_dir, 'nbconvert', 'templates')
             paths.append(base_dir)
 
+            compatibility_dir = os.path.join(root_dir, 'jupyter_contrib_nbextensions', 'templates')
+            paths.append(compatibility_dir)
+            compatibility_dir = os.path.join(root_dir, 'nbconvert', 'templates', 'base')
+            paths.append(compatibility_dir)
+            compatibility_dir = os.path.join(root_dir, 'nbconvert', 'templates', 'classic')
+            paths.append(compatibility_dir)
             compatibility_dir = os.path.join(root_dir, 'nbconvert', 'templates', 'compatibility')
             paths.append(compatibility_dir)
 
